@@ -17,14 +17,16 @@
                 <td> <strike>{{ item.name }}</strike></td>
             {% else %}
                 <td>{{ item.name }}</td>
-            
-            {% empty %}
+        {% endif %}
+            </tr>
+        {% empty %}
             <tr><td>You have nothing to do.</td></tr>
-            {% endif %}
+            
                
                 
-            </tr>
+           
         {% endfor %}
     </table>
+    <a href="/add">Add an Item</a>
 </body>
 </html>
